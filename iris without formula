@@ -1,0 +1,7 @@
+from sklearn.datasets import load_iris
+from scipy.stats import pearsonr
+data = load_iris()
+x=data.data[:,2]
+y=data.target
+corr,p_value = pearsonr(x,y)
+print corr
